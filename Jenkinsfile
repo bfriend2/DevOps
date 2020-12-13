@@ -1,12 +1,9 @@
 pipeline {
-  agent {
-    dockerfile true
-  }
+  agent any
   stages {
-    stage('Hello') {
+    stage('Example') {
       steps {
         echo 'Hello World!'
-        sh 'echo myVar = $myVar'
       }
     }
   }
