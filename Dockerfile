@@ -1,7 +1,5 @@
-FROM python:3
+FROM ubuntu
 
 ADD HelloDocker.py /
-
-RUN pip install pystrich
 
 CMD ["python", "./HelloDocker.py"]

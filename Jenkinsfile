@@ -14,7 +14,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build("bfriend2/DevOps")
+          dockerImage = docker.build("dockerdemo44/projectuno")
         }
       }
     }
