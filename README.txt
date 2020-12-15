@@ -1,1 +1,1 @@
-I am still learning what to type in these
+Utilyzing Jenkins to pull an image from a dockerhub repository, build the image and push it back up to the docker hub repository.  The image will be a ubuntu image and the docker container will have a python script.
