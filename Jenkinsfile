@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "https://hub.docker.com/repository/docker/dockerdemo44/projectuno" 
+    registry = "docker/dockerdemo44/projectuno" 
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
@@ -14,7 +14,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build("dockerdemo44/projectuno")
+          dockerImage = docker.build registry + "$BUILD_NUMBER"
         }
       }
     }
