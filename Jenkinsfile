@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    dockerfile true
-  }
+  agent any
   environment {
     registry = "docker/dockerdemo44/projectuno" 
     registryCredential = 'dockerhub'
