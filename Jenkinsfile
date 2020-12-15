@@ -1,11 +1,11 @@
 pipeline {
+  agent {
+    dockerfile true
+  }
   environment {
     registry = "docker/dockerdemo44/projectuno" 
     registryCredential = 'dockerhub'
     dockerImage = ''
-  }
-  agent {
-    dockerfile true
   }
   stages {
     stage('Cloning Git') {
