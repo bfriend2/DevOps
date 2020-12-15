@@ -3,6 +3,7 @@ FROM ubuntu:latest
 USER jenkins
 
 RUN apt-get update && apt-get install -y \
-    python3 
+    python3 \
+    usermod -aG docker jenkins
 
 CMD ["python", "./HelloDocker.py"]
